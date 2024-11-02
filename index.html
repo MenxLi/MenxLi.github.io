@@ -6,11 +6,16 @@
     <title>Li, Mengxun</title>
   </head>
   <body>
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="./projects/cbct_tnt/index.html">CBCT TNT</a></li>
-    </ul>
-    <h2>More</h2>
-    <a href="https://limengxun.com">Personal website</a><br>
+    <h1 style="text-align: center; margin-top: 5rem">😊Redirecting to my personal page... <span id="countdown">3s</span></h1>
   </body>
+  <script>
+    setTimeout(() => {
+      window.location.href = 'https://limengxun.com';
+    }, 3000);
+    let countdown = 3;
+    setInterval(() => {
+      countdown--;
+      document.getElementById('countdown').innerText = `${countdown}s`;
+    }, 1000);
+  </script>
 </html>
